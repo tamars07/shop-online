@@ -10,11 +10,13 @@ class ProductController extends Controller
     public function index(){
     	$new_products = Product::where('new',1)
     	->orderBy('created_at','desc')
-    	->limit(4)
     	->get();
+
+        $all_products = Product::all();
 
     	return view('ban-banh.index',array(
     		'new_products' => $new_products,
+            'all_products' => $all_products,
     	));
     }
 
