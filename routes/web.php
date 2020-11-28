@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','ProductController@index');
 
+Route::get('/login',function(){
+	return view('ban-banh.login');
+});
+
 Route::get('/cart', function () {
     return view('cart');
 });
