@@ -25,7 +25,11 @@ Route::get('/cart', function () {
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
 
-
+//Day la noi dung chinh sua tren branch
+//Console.writeln("Day la Hung map");
+//System.out.println('Hung map');
+//cout<<"Hung map";
+//print("Hung map")
 
 
 
