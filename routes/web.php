@@ -24,6 +24,7 @@ Route::get('/cart', function () {
 });
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
+//New Branch
 
 
 
