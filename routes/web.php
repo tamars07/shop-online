@@ -15,20 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','ProductController@index');
 
-Route::get('/login',function(){
-	return view('ban-banh.login');
-});
+Route::get('/signin','UserController@signin');
+
+Route::get('/signup','UserController@signup');
 
 Route::get('/cart', function () {
     return view('cart');
 });
 
-//route cua trang ban banh
-Route::get('/ban-banh', function () {
-    return view('ban-banh.index');
-});
-
-Route::get('/products', 'ProductController@getProducts');
+Route::get('/products/{id_type}', 'ProductController@getProducts');
 
 
 

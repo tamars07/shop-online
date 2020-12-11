@@ -7,13 +7,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/dest/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/dest/vendors/colorbox/example3/colorbox.css">
-	<link rel="stylesheet" href="assets/dest/rs-plugin/css/settings.css">
-	<link rel="stylesheet" href="assets/dest/rs-plugin/css/responsive.css">
-	<link rel="stylesheet" title="style" href="assets/dest/css/style.css">
-	<link rel="stylesheet" href="assets/dest/css/animate.css">
-	<link rel="stylesheet" title="style" href="assets/dest/css/huong-style.css">
+	<link rel="stylesheet" href="{{asset('assets/dest/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/dest/vendors/colorbox/example3/colorbox.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/dest/rs-plugin/css/settings.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/dest/rs-plugin/css/responsive.css')}}">
+	<link rel="stylesheet" title="style" href="{{asset('assets/dest/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/dest/css/animate.css')}}">
+	<link rel="stylesheet" title="style" href="{{asset('assets/dest/css/huong-style.css')}}">
 </head>
 <body>
 	<div id="header">
@@ -28,8 +28,8 @@
 				<div class="pull-right auto-width-right">
 					<ul class="top-details menu-beta l-inline">
 						<li><a href="#"><i class="fa fa-user"></i>Tài khoản</a></li>
-						<li><a href="#">Đăng kí</a></li>
-						<li><a href="#">Đăng nhập</a></li>
+						<li><a href="/signup">Đăng kí</a></li>
+						<li><a href="/signin">Đăng nhập</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
