@@ -27,10 +27,14 @@ Route::get('/products/{id_type}', 'ProductController@getProducts');
 
 //Day la noi dung chinh sua tren branch
 //Console.writeln("Day la Hung map");
-//System.out.println('Hung map');
+//System.out.println("Hung map");
 //cout<<"Hung map";
 //print("Hung map")
 
+//Day la bai cua Pham Truong Gia Huy
+//System.out.println("Day la dai tieng noi Viet Nam");
+//Console.writeln("Duoc phat thanh tu Ha Noi");
+//cout<<"Thu do nuoc CHXHCN Viet Nam";
 
 
 
