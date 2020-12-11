@@ -25,6 +25,8 @@ Route::get('/cart', function () {
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
 
+//day la noi dung chinh sua tren branch tamtd
+
 
 
 
