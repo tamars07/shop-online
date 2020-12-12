@@ -25,6 +25,7 @@ Route::get('/cart', function () {
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
 
+//day la thay doi trong branch tam.tran
 
 
 
