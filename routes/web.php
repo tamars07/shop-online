@@ -25,6 +25,8 @@ Route::get('/cart', function () {
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
 
+Route::get('/product/{id_product}', 'ProductController@getProductDetail');
+
 
 
 
