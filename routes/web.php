@@ -32,6 +32,9 @@ Route::get('/product/{id_product}', 'ProductController@getProductDetail');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/products', 'AdminController@getProducts');
 
+Route::get('/admin/add-product', 'AdminController@addProduct');
+Route::post('/admin/add-product', 'AdminController@postAddProduct');
+
 
 
 
