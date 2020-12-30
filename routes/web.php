@@ -25,7 +25,15 @@ Route::get('/cart', function () {
 
 Route::get('/products/{id_type}', 'ProductController@getProducts');
 
-Route::get('/product/{id_product}', 'ProductController@getProductDetail');	
+Route::get('/product/{id_product}', 'ProductController@getProductDetail');
+
+//-------------------------------------------------------------
+//route admin control panel
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin/products', 'AdminController@getProducts');
+
+Route::get('/admin/add-product', 'AdminController@addProduct');
+Route::post('/admin/add-product', 'AdminController@postAddProduct');
 
 
 
