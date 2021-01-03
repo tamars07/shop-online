@@ -18,6 +18,7 @@ Route::get('/','ProductController@index');
 Route::get('/signin','UserController@signin');
 
 Route::get('/signup','UserController@signup');
+Route::post('/signup','UserController@postsignup');
 
 Route::get('/cart', function () {
     return view('cart');
@@ -35,6 +36,7 @@ Route::get('/admin/products', 'AdminController@getProducts');
 Route::get('/admin/add-product', 'AdminController@addProduct');
 Route::post('/admin/add-product', 'AdminController@postAddProduct');
 
+Route::get('/admin/users', 'AdminController@getUsers');
 
 
 

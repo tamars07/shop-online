@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\User;
 
 class AdminController extends Controller
 {
@@ -18,6 +19,12 @@ class AdminController extends Controller
     	return view('admin.products',array(
     		'products' => $products
     	));
+    }
+    public function getUsers(){
+        $users = User::all();    
+        return view('admin.users',array(
+            'users' => $users
+        ));
     }
 
     public function addProduct(){
